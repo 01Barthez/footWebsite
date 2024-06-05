@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Titre de la page -->
+        <title>Food Website</title>
+        
+        <!-- MetaBalises -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site pour commander des repas en ligne">
+        <meta name="keywords" content="FoodTime, Restaurant, repas, commander, Barthez">
+        <meta name="author" content="Kenwou Barthez, BarthezWeb">
+
+        <!-- link CSS File -->
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- Link SHORCUT ICON -->
+        <link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon">
+
+        <!-- Link AWESOME ICON -->
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+
+        <!-- Link JS FILE -->
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <!-- Sidebar -->
+        <div class="sidebar" id="sideBar">
+            <!-- Logo -->
+            <h1 class="logo">BarthezFood</h1>
+
+            <!-- List of Menu -->
+            <div class="siderbar-menu">
+                <a href="#"><i class="fa fa-home"></i>Home</a>
+                <a href="#"><i class="fa fa-book"></i>Bills</a>
+                <a href="#"><i class="fa fa-money"></i>Wallet</a>
+                <a href="#"><i class="fa fa-bell-o"></i>Notification</a>
+                <a href="#"><i class="fa fa-comments"></i>Contact Us</a>
+                <a href="#"><i class="fa fa-gear"></i>Setting</a>
+            </div>
+            
+            <!-- Logout -->
+            <div class="sidebar-logout">
+                <a href="#"><i class="fa fa-sign-out"></i>Logout</a>
+            </div>
+        </div>
+    
+        
+        <!-- Main -->
+        <div class="main">
+            <!-- main navbar -->
+            <div class="main-navbar">
+                <!-- Menu on mobile version -->
+                <a href="#" class="menu-toggle" id="menuToggle"><i class="fa fa-bars"></i></a>
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" class="searchInput" id="searchInput" placeholder="What do you want to eat ?" minlength="3" maxlength="50" autocomplete="false">
+                    <button class="searchBtn" id="searchBtn">Search</button>
+                </div>
+
+                <!-- Profile icon on left -->
+                <div class="profile">
+                    <a href="#" class="cart"><i class="fa fa-ambulance"></i></a>
+                    <a href="#" class="user"><i class="fa fa-user"></i></a>
+                </div>
+            </div>
+
+            <div class="main-highlight">
+                <div class="main-header">
+                    <h2 class="main-title">Recommandations</h2>
+                    <div class="main-arrow">
+                        <i class="fa fa-arrow-left previous"></i>
+                        <i class="fa fa-arrow-right  next"></i>
+                    </div>
+                </div>
+
+                <div class="highlight-wrapper">
+                    <div class="highlight-card">
+                        <img src="./img/pizza.jpg" class="highlight-img"></img>
+                        <div class="highlight-desc">
+                            <h4>Pizza</h4>
+                            <p>$8.50</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-card">
+                        <img src="./img/fish.jpg" class="highlight-img"></img>
+                        <div class="highlight-desc">
+                            <h4>Special Fish</h4>
+                            <p>$13.40</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-card">
+                        <img src="./img/shawarma.jpg" class="highlight-img"></img>
+                        <div class="highlight-desc">
+                            <h4>Premium Shawarma</h4>
+                            <p>$65.70</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-card">
+                        <img src="./img/DG.jpg" class="highlight-img"></img>
+                        <div class="highlight-desc">
+                            <h4>Poulet Rotis</h4>
+                            <p>$128.50</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-card">
+                        <img src="./img/rice.jpg" class="highlight-img"></img>
+                        <div class="highlight-desc">
+                            <h4>Nice Rice</h4>
+                            <p>$18.50</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Main menu / order -->
+            <div class="main-menus">
+                <div class="main-filter">
+                    <div>
+                        <h2 class="main-title">Menu <br> Category</h2>
+                        <div class="main-arrow">
+                            <i class="fa fa-arrow-left"></i>
+                            <i class="fa fa-arrow-right"></i>    
+                        </div>
+                    </div>    
+                    
+ 
+                    <div class="filter-wrapper">
+ 
+                        <div class="filter-card">
+                            <div class="filter-icon">
+                                <i class="fa fa-coffee"></i>
+                            </div>
+                            <p>All Menus</p>
+                        </div>
+
+                        <div class="filter-card">
+                            <div class="filter-icon">
+                                <i class="fa fa-coffee"></i>
+                            </div>
+                            <p>Burger</p>
+                        </div>
+
+                        <div class="filter-card">
+                            <div class="filter-icon">
+                                <i class="fa fa-coffee"></i>
+                            </div>
+                            <p>Pizza</p>
+                        </div>
+
+                        <div class="filter-card">
+                            <div class="filter-icon">
+                                <i class="fa fa-coffee"></i>
+                            </div>
+                            <p>Wine</p>
+                        </div>
+
+                        <div class="filter-card">
+                            <div class="filter-icon">
+                                <i class="fa fa-coffee"></i>
+                            </div>
+                            <p>Ice Cream</p>
+                        </div>
+
+
+                        <div class="filter-card">
+                            <div class="filter-icon">
+                                <i class="fa fa-coffee"></i>
+                            </div>
+                            <p>Coffee</p>
+                        </div>
+
+                        <div class="filter-card">
+                            <div class="filter-icon">
+                                <i class="fa fa-coffee"></i>
+                            </div>
+                            <p>SeaFood</p>
+                        </div>
+
+                        <div class="filter-card">
+                            <div class="filter-icon">
+                                <i class="fa fa-coffee"></i>
+                            </div>
+                            <p>Healthy</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider">
+            </div>
+
+
+            <!-- List of foods -->
+            <div class="main-details">
+                <h2 class="main-title">Choose Order</h2>
+
+                <div class="detail-wrapper">
+                    <div class="detail-card">
+                        <img src="./img/repas17.jpg" alt="Food" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4> Taro Sauce Jaune</h4>
+                                <p class="detail-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officiis, ex at placeat blanditiis </p>
+                                <p class="detail-price">$65.09</p>
+                            </div>
+                            <i class="fa fa-bookmark detail-favorite"></i>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img src="./img/repas1.jpg" alt="Food" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4> Taro Sauce Jaune</h4>
+                                <p class="detail-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officiis, ex at placeat blanditiis </p>
+                                <p class="detail-price">$65.09</p>
+                            </div>
+                            <i class="fa fa-bookmark detail-favorite"></i>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img src="./img/repas23.jpg" alt="Food" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4> Taro Sauce Jaune</h4>
+                                <p class="detail-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officiis, ex at placeat blanditiis </p>
+                                <p class="detail-price">$65.09</p>
+                            </div>
+                            <i class="fa fa-bookmark detail-favorite"></i>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img src="./img/repas24.jpg" alt="Food" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4> Taro Sauce Jaune</h4>
+                                <p class="detail-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officiis, ex at placeat blanditiis </p>
+                                <p class="detail-price">$65.09</p>
+                            </div>
+                            <i class="fa fa-bookmark detail-favorite"></i>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img src="./img/repas27.jpg" alt="Food" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4> Taro Sauce Jaune</h4>
+                                <p class="detail-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officiis, ex at placeat blanditiis </p>
+                                <p class="detail-price">$65.09</p>
+                            </div>
+                            <i class="fa fa-bookmark detail-favorite"></i>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img src="./img/repas28.jpg" alt="Food" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4> Taro Sauce Jaune</h4>
+                                <p class="detail-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officiis, ex at placeat blanditiis </p>
+                                <p class="detail-price">$65.09</p>
+                            </div>
+                            <i class="fa fa-bookmark detail-favorite"></i>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img src="./img/repas5.jpg" alt="Food" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4> Taro Sauce Jaune</h4>
+                                <p class="detail-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officiis, ex at placeat blanditiis </p>
+                                <p class="detail-price">$65.09</p>
+                            </div>
+                            <i class="fa fa-bookmark detail-favorite"></i>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img src="./img/repas8.jpg" alt="Food" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4> Taro Sauce Jaune</h4>
+                                <p class="detail-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officiis, ex at placeat blanditiis </p>
+                                <p class="detail-price">$65.09</p>
+                            </div>
+                            <i class="fa fa-bookmark detail-favorite"></i>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <img src="./img/repas9.jpg" alt="Food" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4> Taro Sauce Jaune</h4>
+                                <p class="detail-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officiis, ex at placeat blanditiis </p>
+                                <p class="detail-price">$65.09</p>
+                            </div>
+                            <i class="fa fa-bookmark detail-favorite"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
